@@ -1,0 +1,11 @@
+:global {
+  .react-tabs__tab {
+    padding: 0;
+
+    a {
+      text-decoration: none;
+      padding: 6px 12px;
+      display: inline-block;
+    }
+  }
+}
