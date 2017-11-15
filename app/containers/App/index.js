@@ -6,7 +6,7 @@ import { Tabs } from '../../components';
 
 const App = ({ tabsData, routes, selectedTabIndex }) => (
   <div>
-    <Tabs data={tabsData} selectedTabIndex={selectedTabIndex} />
+    { selectedTabIndex !== -1 && <Tabs data={tabsData} selectedTabIndex={selectedTabIndex} /> }
     <Switch>
       {routes}
     </Switch>
@@ -29,7 +29,7 @@ App.propTypes = {
 App.defaultProps = {
   tabsData: null,
   routes: null,
-  selectedTabIndex: 0,
+  selectedTabIndex: null,
 };
 
 App.displayName = 'App';
