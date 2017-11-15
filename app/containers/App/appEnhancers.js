@@ -17,7 +17,7 @@ export default compose(
       setTabsData: () => tabsData => ({ tabsData }),
     }),
   lifecycle({
-    componentDidMount() {
+    componentWillMount() {
       setTimeout(async () => {
         this.props.setTabsData(await api.getTabsData());
       }, 1500);
